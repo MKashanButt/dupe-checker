@@ -10,8 +10,9 @@ return new class extends Migration
     {
         Schema::create('medicare_ids', function (Blueprint $table) {
             $table->id();
-            $table->string('medicare_id');
-            $table->timestamps();
+            $table->string('medicare_id', 14);
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
 
