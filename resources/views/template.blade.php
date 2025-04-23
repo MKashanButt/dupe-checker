@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <main class="flex items-center justify-center h-[100vh]">
+    <main class="flex items-center justify-center h-[100vh] bg-[linear-gradient] text-white">
         @yield('content')
     </main>
 </body>
