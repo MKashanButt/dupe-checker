@@ -19,7 +19,7 @@
         <script>
             @isset($present)
                 @if ($present)
-                    toastr.danger('Member Id is Present!');
+                    toastr.error('Member Id is Present!');
                 @else
                     toastr.success('Member Id is not Present!');
                 @endif
